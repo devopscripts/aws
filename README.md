@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## aws
 aws ansible scripts
 ==============
@@ -25,3 +26,6 @@ git clone https://github.com/devopscripts/aws.git
 
 # Submit bugs:
 Please use https://github.com/devopscripts/aws/issues to submit your comments and bugs found. Thanks for your feedback.
+=======
+# aws
+>>>>>>> 0d7020ca386403ef9580b033d80182b024084ef5
