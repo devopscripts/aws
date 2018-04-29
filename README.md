@@ -3,6 +3,8 @@ aws ansible scripts
 ==============
 
 This repository includes some sample codes to show how to create AWS resources, such as VPC, subnet, route table, security group, EC2, ELB, with ansible playbooks and roles.
+
+
 Code structure:
 ├── credentials.yml
 ├── inventory
