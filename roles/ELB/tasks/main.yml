@@ -1,0 +1,18 @@
+---
+- name: create a sample load balancer
+  ec2_elb_lb:
+    name: apache web server elb sample
+    state: present
+    region: "{{ aws_region }}"
+    security_group_ids: "{{ elb_security_group_id }}"
+    instance_ids:
+    - "{{ ec2_pub_subnet1.instances[0].id}}"
+    - "{{ ec2_pub_subnet2.instances[0].id}}"
+    cross_az_load_balancing: "yes"
+    zones: 
+    - "{{ aws_region }}a"
+    - "{{ aws_region }}b"
+    listener:
+    - protocol: tcp
+      load_balancer_port: 80
+      instance_port: 80
